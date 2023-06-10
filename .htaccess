@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+<IfModule mod_negotiation.c>
+    Options -MultiViews
+</IfModule>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ ^$1 [N]
+RewriteCond %{REQUEST_URI} (\.\w+$) [NC]
+RewriteRule ^(.*)$ public/$1 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ server.php
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW IPDENYID:9zmhDvI7mX
+deny from 66.249.70.42
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE 9zmhDvI7mX:IPDENYID
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW IPDENYID:MYqhLSJ49R
+deny from 92.9.179.41
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE MYqhLSJ49R:IPDENYID
+

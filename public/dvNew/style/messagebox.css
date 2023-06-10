@@ -1,0 +1,88 @@
+#hide {
+    display: none
+}
+
+#ofBar {
+    background: #cce5ff;
+    text-align: left;
+    min-height: 60px;
+    z-index: 999999999;
+    font-size: 16px;
+    color: #3e3947;
+    padding: 16px 5%;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 6px 13px -4px rgba(0, 0, 0, .25)
+}
+
+#ofBar b {
+    font-size: 15px !important;
+    font-weight: 700
+}
+
+#btn-bar {
+    opacity: 1
+}
+
+#btn-bar {
+    background-color: #fff;
+    color: #22222;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: .95;
+    margin-left: 15px;
+    top: 0;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 5px 10px -3px rgba(0, 0, 0, .23), 0 6px 10px -5px rgba(0, 0, 0, .25)
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+#close-bar {
+    font-size: 22px;
+    color: #3e3947;
+    margin-right: 0;
+    position: absolute;
+    right: 5%;
+    background: #fff;
+    opacity: .5;
+    padding: 0;
+    height: 25px;
+    line-height: 21px;
+    width: 25px;
+    border-radius: 50%;
+    text-align: center;
+    top: 18px;
+    cursor: pointer;
+    z-index: 9999999999;
+    font-weight: 200;
+    text-decoration: none
+}
+
+#close-bar:hover {
+    opacity: 1
+}
+
+@media(max-width:991px) {
+    #ofBar {
+        padding: 50px 20px 20px;
+        text-align: center
+    }
+
+    #btn-bar {
+        display: block;
+        margin-top: 10px;
+        margin-left: 0
+    }
+}
